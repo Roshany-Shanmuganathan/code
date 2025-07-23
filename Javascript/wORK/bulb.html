@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        cursor: pointer;
+        background-color: rgb(159, 159, 224);
+    }
+    .container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 20px ;
+    }
+    img{
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+    <button onclick="document.getElementById('myImage').src='uki2.png'">ON</button>
+
+    <img id="myImage" src="uki.png" style="width:500px">
+
+    <button onclick="document.getElementById('myImage').src='./uki.png'">OFF</button>
+    </div>
+</body>
+<script>
+    function bulbOn(){
+            document.getElementById(bulb).src='uki.png';  }
+
+
+             function bulbOff(){
+            document.getElementById(bulb).src='uki2.png';}
+
+
+</script>
+
+
+            
+</html>

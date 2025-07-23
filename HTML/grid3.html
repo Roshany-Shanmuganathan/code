@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+         display: flex; 
+       
+       
+    }
+    .container1 {
+        display: grid;
+        /* margin: 20px ;
+        margin-left: 20px; */
+        width: 200px;
+        height: 380px;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 8px;
+        height: 340px;
+    }
+    .container2 {
+        display: grid;
+        width: 200px;
+        height: 380px;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 8px;
+    }
+    .container1 > div {
+        text-align: center;
+         padding: 10px;
+         font-size: 30px;
+         height: ; 
+    }
+    .container2>div {
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+        height:;
+    }
+    .box1 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: #003466;
+    }
+    .box4 {
+        display: grid;
+        grid-row-start: 3;
+        grid-row-end: 8;
+        background-color: #A3A353;
+    }
+    .box8 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 13;
+        background: #53A452;
+    }
+    .box2 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background: #2A5352;
+    }
+    .box5 {
+        display: grid;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        background: #547CA5;
+    }
+    .box7 {
+        display: grid;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        background: #A22928;
+    }
+    .box3 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        background: #7A297A;
+    }
+    .box17 {
+        display: grid;
+        grid-row-start: 11;
+        grid-row-end: 16;
+        background: #7A297A;
+    }
+    .box9 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 12;
+        background: #A67C7E;
+    }
+    .box12 {
+        display: grid;
+        grid-row-start: 12;
+        grid-row-end: 14;
+        background: #7B5328;
+    }
+    .box14 {
+        display: grid;
+        grid-row-start: 14;
+        grid-row-end: 15;
+        background-color: #2EC1C1;
+    }
+    .box13{
+        display: grid;
+        grid-row-start: 13;
+        grid-row-end: 15;
+        background-color: #361236;
+    }
+    .box6 {
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 8;
+        background: #7BA27C;
+    }
+    .box19 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 11;
+        background: #7BA27C;
+    }
+    .box10 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 11;
+        background: #CBA37A;
+    }
+    .box16 {
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 8;
+        background: #CBA37A;
+    }
+    .box11{
+        display: grid;
+        grid-row-start: 11;
+        grid-row-end: 15;
+        background: #2A2A7A;
+    }
+   
+    
+    .box15 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        background: #2A2A7A;
+    }
+    .box18 {
+        display: grid;
+        grid-row-start: 12;
+        grid-row-end: 16;
+        background: #2A5352;
+    }
+    .box21 {
+        display: grid;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        background: #547CA5;
+    }
+    .box22 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 10;
+        background: #A22928;
+    }
+    .box23 {
+        display: grid;
+        grid-row-start: 4;
+        grid-row-end: 8;
+        background: #A67C7E;
+    }
+    .box24 {
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background: #7B5328;
+    }
+    .box25 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end:2 ;
+        background-color: #2EC1C1;
+    }
+    .box26 {
+        display: grid;
+        grid-row-start: 13;
+        grid-row-end: 16;
+        background-color: #003466;
+    }
+    .box27 {
+        display: grid;
+        grid-row-start: 8;
+        grid-row-end: 13;
+        background-color: #A3A353;
+    }
+    .box28 {
+        display: grid;
+        grid-row-start: 3;
+        grid-row-end: 8;
+        background: #53A452;
+    }
+    .box29 {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color:  #361236;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="container1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+            <div class="box7"></div>
+            <div class="box8"></div>
+            <div class="box9"></div>
+            <div class="box10"></div>
+            <div class="box11"></div>
+            <div class="box12"></div>
+            <div class="box13"></div>
+            <div class="box14"></div>
+        </div>
+        <div class="container2">
+            <div class="box15"></div>
+            <div class="box16"></div>
+            <div class="box17"></div>
+            <div class="box18"></div>
+            <div class="box19"></div>
+            <div class="box20"></div>
+            <div class="box21"></div>
+            <div class="box22"></div>
+            <div class="box23"></div>
+            <div class="box24"></div>
+            <div class="box25"></div>
+            <div class="box26"></div>
+            <div class="box27"></div>
+            <div class="box28"></div>
+            <div class="box29 "></div>
+        </div>
+    </div>
+</body>
+</html>

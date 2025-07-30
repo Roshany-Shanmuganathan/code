@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JSForm.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Student Info Form</h1>
+
+        <div class="container">
+
+            <label for="text">Full Name:</label><br><br>
+            <input type="text" name="" id="name" required><br><br>
+            <label for="text">Age:</label><br><br>
+            <input type="number" name="" id="age" required><br><br>
+            <label for="text">Email:</label><br><br>
+            <input type="email" name="" id="email" required><br><br>
+            <fieldset>
+                <legend id="gender" >Gender</legend>
+                <input type="radio" name="gender" id="Radio1" value="male">Male <br>
+                <input type="radio" name="gender" id="Radio2" value="female">Female <br>
+            </fieldset>
+            <fieldset>
+                <legend id="subject" aria-required="true">Subject</legend>
+                <input type="checkbox" name="subject" id="maths">Maths<br>
+                <input type="checkbox" name="subject" id="science">Science<br>
+                <input type="checkbox" name="subject" id="english">English<br>
+            </fieldset>
+            <div class="b1">
+                <input type="submit" name="submit" id="submit" onclick="displayData(event)">
+                <button id="clear" onreset="cleardata">Clear Entries</button>
+            </div>
+    </form>
+    </div>
+    <div>
+    <p id="display-container"></p>
+    </div>
+    <div class="footer">
+        <h5 id="footer">Weekend Task-JS Basics</h5>
+    </div>
+    <script src="JSForm.js"></script>
+</body>
+
+</html>

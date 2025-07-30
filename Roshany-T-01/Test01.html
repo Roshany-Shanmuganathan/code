@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<style>
+    .topnav{
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: #1f3b4d;
+    }
+    .img{
+        width: 100px;
+        height: 50px;
+    }
+   
+    .button-a{
+        background-color:#e67e22 ;
+    }
+
+    .hero{
+        background-color: rgb(223,230,233);
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- navbar -->
+    <div class="topnav">
+        <div class="img">
+            <img src="./img/logo - Copy.png" alt="">
+        </div>
+        <div>
+            <a href="">Home</a>
+            <a href="">Course</a>
+            <a href="">Schedule</a>
+            <a href="">Our Center</a>
+            <a href="">Other Location</a>
+            <a href="">Contact</a>
+        </div>
+        
+            <button class="button-a">Apply Now</button>
+        
+    </div>
+    
+<!-- hero section -->
+    <div class="hero">
+        <h1> Kickstart Your Web Development Career</h1>
+        <p>  Master Full Stack Development from Scratch using the MERN Stack (MongoDB,
+             Express, React, Node.js)</p>
+        <div class="button-b"><button>Get Started</button></div>
+    </div>
+
+
+<!-- courses -->
+ <div class="main">
+  <div class="couses"><h2>Our Featured Courses</h2></div>
+  <div class="main-a">
+    <div class="box-1">
+        <h3>Frontend Basics</h3>
+        <p>HTML5, CSS3, Responsive Design, Accessibility</p>
+    </div>
+
+    <div class="box-2">
+        <h3> JavaScript Essentials</h3>
+        <p>ES6+, DOM Manipulation, Async Programming, API
+           Integration</p>
+    </div>
+
+    <div class="box-3">
+        <h3> Backend & Database</h3>
+        <p> Node.js, Express, MongoDB, RESTful APIs</p>
+    </div>
+  </div>
+
+  <!-- table -->
+   <h2> Course Schedule</h2>
+   <div class="table">
+    <table>
+    <tr>
+        <th> Course Name</th>
+        <th> Duration</th>
+        <th> Level</th>
+        <th>Mode</th>
+    </tr>
+    <tr>
+        <td>Frontend Basics</td>
+        <td>4Weeks</td>
+        <td>Beginner</td>
+        <td>Online</td>
+    </tr>
+    <tr>
+        <td> JavaScript Essentials</td>
+        <td>4Weeks</td>
+        <td> Intermediate</td>
+        <td>Online</td>
+    </tr>
+    <tr>
+        <td> Node & MongoDB</td>
+        <td>4Weeks</td>
+        <td>Advanced</td>
+        <td>Hybrid</td>
+    </tr>
+    <tr>
+        <td> React Mastery</td>
+        <td>4Weeks</td>
+        <td>Advanced</td>
+        <td>Hybrid</td>
+    </tr>
+   </table>
+    </div>
+    <!-- our center -->
+     <div class="center">
+       <h2> Our Center</h2>
+       <p>Visit our main center located in the heart of Vavuniya</p>
+     </div>
+     <div class="location-1">
+        <div>
+            <h3> Vavuniya Center</h3>
+            <hr>
+            <p> Address: No 57, 2nd Cross Street, Vavuniya</p>
+            <p> Phone: 024-2222 073</p>
+            <p> Email: vavuniya@uki.life</p>
+            <p> Hours: 08.30am - 04.30pm</p>
+            <p> Facilities: Modern computer lab, Library, Student lounge</p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.3587251718773!2d80.49670187501563!3d8.752278191298373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc150013890fe9%3A0x2a8c554b5ddee019!2sUki%20Technology%20School%20Vavuniya%20Centre!5e0!3m2!1sen!2slk!4v1752216786109!5m2!1sen!2slk"
+           width="300" height="300" ></iframe>
+        </div>
+     </div>
+
+
+     <!-- Other Location -->
+      <h2> Other Locations</h2>
+      <p> We're expanding to serve you better across the region</p>
+
+      <!-- branches -->
+       <div class="box-a">
+        <h4>Jaffna Center</h4>
+        <hr>
+        <p><b>Address:</b> No 124, Rasavinthodam Road, Jaffna</p>
+        <p><b>Phone:</b>077 569 4587</p>
+        <p><b>Email:</b> info@uki.life</p>
+        <p><b>Hours:</b>08.30am - 04.30pm</p>
+       </div>
+       <div class="box-b">
+         <h4> Kilinochchi Center</h4>
+         <hr>
+        <p><b>Address:</b>No 423, Thirunagar, Kilinochchi</p>
+        <p><b>Phone:</b>021-2284 647</p>
+        <p><b>Email:</b>Kilinochi@uki.life</p>
+        <p><b>Hours:</b>08.30am - 04.30pm</p>
+       </div>
+       <div class="box-c">
+        <h4> Mannar Center</h4>
+        <div class="button-3">Comming Soon</div>
+        <hr>
+        <p> New center opening soon!</p>
+        <p> We're excited to bring our MERN programs to Mannar</p>
+        <p> Contact us for updates</p>
+       </div>
+       <div class="contact">
+        <form action="">
+            <caption> Contact Us</caption><br><br>
+            <input type="text" name="" id="" placeholder="Your Name"><br><br>
+            <input type="text" name="" id="" placeholder="Your Email"><br><br>
+            <textarea name="" id="" rows="2" cols="21"></textarea><br><br>
+            <button>Send Message</button>
+        </form>
+       </div>
+       <footer>
+        <p>&copy 2025 MERN Academy. All rights reserved.</p>
+        <div class="link-1">
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms Of Service</a>|
+        <a href="">Contact Us</a>
+        </div>
+       </footer>
+ </div>
+    
+</body>
+</html>

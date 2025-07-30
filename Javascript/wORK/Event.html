@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            cursor: pointer;
+            background-color:rgb(87, 169, 87);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+      <!-- onclick-01  -->
+                <button onclick="alert('hey guys')">Click me</button> 
+
+      <!-- onmouseover-02 -->
+           <img onmouseover="bigImg(this)" src="./uki.png" alt="" width="32px" height="32px"> -->
+   <script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script> 
+
+
+<!--onmouseout-03  -->
+    <!- <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./uki.png" alt="" width="32px" height="32px">
+   <script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script> 
+
+<!--onkeydown-04  -->
+<!-- <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeydown="myFunction()">
+
+<script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+</script> -->
+
+
+<!-- onkeyup-05 -->
+  <!-- <input type="text" id="js" onkeyup="myFunction()">
+
+<script>
+function myFunction() {
+  let x = document.getElementById("js");
+  x.value = x.value.toUpperCase();
+}
+</script> -->
+
+<!-- onkeypress -->
+ <!-- <input type="text" onkeypress="myFunction()">
+
+<script>
+function myFunction() {
+console.log("hi")
+}
+</script> -->
+
+
+
+<!-- onchange
+<select id="Select" onchange="myFunction()">
+  <option value="Audi">Audi
+  <option value="BMW">BMW
+  <option value="Mercedes">Mercedes
+  <option value="Volvo">Volvo
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("Select").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+
+<!-- onfocus -->
+ <!-- First name: <input type="text" id="js" onfocus="myFunction(this.id)">
+ <script>
+function myFunction(x) {
+  document.getElementById(x).style.background = "yellow";
+}
+</script> -->
+
+
+<!-- oninput -->
+<!-- <input type="text" id="myInput" oninput="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = "You wrote: " + x;
+}
+</script> -->
+
+
+<!-- onsubmit -->
+ <!-- <form action="/action_page.php" onsubmit="myFunction()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script> -->
+
+
+<!-- onreset -->
+ <!-- <form onreset="myFunction()">
+  Enter name: <input type="text">
+  <input type="reset">
+</form>
+
+<script>
+function myFunction() {
+  alert("The form was reset");
+}
+</script> -->
+
+<!-- onload -->
+ <!-- <body  onload="myFunction()">
+    
+ </body>
+ <script>
+function myFunction() {
+  alert("Page is loaded");
+}
+</script> -->
+
+
+<!-- onresize -->
+<!-- <body onresize="myFunction()">
+
+<p>Try to resize the browser window.</p>
+
+<script>
+function myFunction() {
+  alert("You have changed the size of the browser window!");
+}
+</script> -->
+
+<!-- onscroll -->
+ <!-- <style>
+    #myDIV {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+ </style>
+ <p>Try the scrollbar in div.</p>
+
+<div id="myDIV" onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+<br><br>
+'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV").style.color = "red";
+}
+</script> -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+    }
+    
+    
+    /* .switch{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } */
+    button{
+        border: none;
+        background-color: orangered;
+        color: white;
+        padding: 7px 15px;
+        cursor: pointer;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: ;
+    }
+
+</style>
+<body>
+    <!-- <div class="container"> -->1
+        
+            <!-- <div id="bulb">
+                <img src="../images.jpeg" alt="uki logo" width="500px">
+            </div> -->
+           
+        
+        <!-- <div class="switch">
+            <button onclick="on()">ON</button>
+            <button onclick="off()">OFF</button>
+            </div> -->
+             <!-- </div> -->
+             <!-- <button onclick = "document.getElementById('myimg').src='../images.jpeg'">ON</button>
+
+             <img id="myimg" src="../images.jpeg" alt="uki logo" width="500px">
+
+             <button onclick = "document.getElementById('myimg').src='../images.jpeg'">OFF</button>
+    -->
+<div class="container">
+    <div>
+    <img id="myimg" src="../images.jpeg" alt="uki logo" width="500px"></div>
+    
+    <div><button id ="on" class="bulb-btn" onclick="bulb-on()">ON</button></div>
+    <div><button id ="off" class="bulb-btn" onclick="bulb-off()">OFF</button></div>
+    </div>
+
+
+    <script>
+    
+        
+        // function on(){
+        //     bulbOn.style.display="block";
+        //     bulbOff.style.display="none";
+        // }
+        // function off(){
+        //     bulbOn.style.display = "none";
+        //     bulbOn.style.display = "block";
+        // }
+        function bulb_on(){
+            document.getElementById(bulb).src='../images.jpeg';  }
+             function bulb_off(){
+            document.getElementById(bulb).src='../images.jpeg';}
+            
+
+      
+    </script>
+</body>
+</html>
